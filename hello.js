@@ -10,7 +10,7 @@ console.log(process.env.BUILD_NUMBER)
 
 app.get('/', function (req, res) {
   console.log('Hello World request.');
-  res.render('index', { title: 'Hello', message: 'Yo, World!', 
+  res.render('index', { title: 'Hello', message: 'Yo, Catalina!', 
         name: process.env.COMMIT_AUTHOR,
         context: context, 
         buildNumber: process.env.BUILD_NUMBER, 
